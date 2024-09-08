@@ -1,0 +1,24 @@
+name: RedstoneSMP
+version: '1.0-SNAPSHOT'
+main: llc.redstone.redstonesmp.RedstoneSMP
+api-version: '1.21'
+
+commands:
+  globalchat:
+    description: Talk in global chat or toggle it off/on
+    usage: /globalchat [message]
+    permission: smp.globalchat
+    aliases: [ac, allchat]
+  localchat:
+    description: Talk in local chat or toggle it off/on
+    usage: /localchat [message]
+    permission: smp.localchat
+    aliases: [lc]
+  group:
+    description: Group stuff
+    usage: /group <create|add|remove|list|listall|delete|setname|chat|leave>
+    permission: smp.group
+  chatsettings:
+    description: Change chat settings
+    usage: /chatsettings mute <local, global, group, player> [player, group]
+    permission: smp.chatsettings
